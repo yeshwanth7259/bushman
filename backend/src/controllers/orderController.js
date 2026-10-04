@@ -43,7 +43,7 @@ const createOrder = async (req, res) => {
     }
 
     // 2. Create MongoDB Order
-    const orderNumber = \`BM\${Math.floor(Math.random() * 90000) + 10000}\`; // e.g. BM10284
+    const orderNumber = `BM${Math.floor(Math.random() * 90000) + 10000}`; // e.g. BM10284
     
     const deliveryCharges = 40;
     const discount = 0;
