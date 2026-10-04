@@ -30,8 +30,8 @@ export default function LoginScreen({ navigation }) {
     try {
       const userCredential = await confirm.confirm(code);
       if (userCredential && userCredential.user) {
-        // Send to profile setup instead of Home
-        navigation.replace('ProfileSetup');
+        // Send directly to Home, ask for details at checkout
+        navigation.replace('Home');
       }
     } catch (error) {
       console.error(error);
