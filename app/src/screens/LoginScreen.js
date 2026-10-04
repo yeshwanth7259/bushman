@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, SafeAreaView, KeyboardAvoidingView, Platform, Alert } from 'react-native';
-import firebase from '@react-native-firebase/app';
-import '@react-native-firebase/auth';
+import auth from '@react-native-firebase/auth';
 
 export default function LoginScreen({ navigation }) {
   const [phone, setPhone] = useState('');
@@ -14,9 +13,7 @@ export default function LoginScreen({ navigation }) {
     setLoading(true);
     try {
       const formattedPhone = '+91' + phone;
-      // Using the namespace API to guarantee initialization
-      const authInstance = firebase.auth();
-      const confirmation = await authInstance.signInWithPhoneNumber(formattedPhone);
+      const confirmation = await auth().signInWithPhoneNumber(formattedPhone);
       setConfirm(confirmation);
     } catch (error) {
       console.error(error);
