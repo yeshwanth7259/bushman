@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity, SafeAreaView, ActivityIndicator } from 'react-native';
 import axios from 'axios';
 
-// LIVE SERVER URL: Since you requested a live server instead of localhost,
-// deploy your NodeJS backend to a service like Render.com and put the URL here.
-const API_URL = 'https://api.bushmanmeat.com/api'; // Placeholder for live server
+// LIVE SERVER URL: 
+const API_URL = 'https://bushman.onrender.com/api'; 
 
 export default function HomeScreen() {
   const [products, setProducts] = useState([]);
