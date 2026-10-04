@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710182577811",
+    "project_id": "bushman-33324",
+    "storage_bucket": "bushman-33324.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710182577811:android:b53b9e3b87ecacbb7f4f66",
+        "android_client_info": {
+          "package_name": "com.bushmanmeat.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuSN97QaEHJEyHjB-BFLCeHLPb2FyIKJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

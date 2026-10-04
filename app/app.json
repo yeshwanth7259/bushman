@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Bushman Meat",
+    "slug": "bushman-meat",
+    "owner": "bushman_meat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.bushmanmeat.app",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "expo-dev-client"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f6db6f75-f164-4f42-885e-416d7ad66168"
+      }
+    }
+  }
+}
